@@ -9,7 +9,7 @@ services:
     ports:
       - "50070:50070"
       - "8088:8088"
-      - "707:707"  # Assuming you meant to expose port 707
+      - "707:707" 
     networks:
       - hadoop
 
