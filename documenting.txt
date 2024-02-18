@@ -1,0 +1,3 @@
+First I tried to set up a docker-compose file for easier running of the master, slave1 and slave2
+containers, I've run into some issues for port 22 connection refused, a small hack to resolve it was to run on all containers the ssh service, which then I added to the running of the docker-compose file.
+
