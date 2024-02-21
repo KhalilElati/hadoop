@@ -1,0 +1,4 @@
+/MapReduce/target/*
+/MapReduce/target/classes*
+*.jar
+

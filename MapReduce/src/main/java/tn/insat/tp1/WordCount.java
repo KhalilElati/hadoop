@@ -19,10 +19,10 @@ public class WordCount {
         job.setReducerClass(IntSumReducer.class);
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
-        FileInputFormat.addInputPath(job,new Path("MapReduce/src/main/resources/input/input.txt"));
-        FileOutputFormat.setOutputPath(job, new Path("MapReduce/src/main/resources/output.txt"));
-        // FileInputFormat.addInputPath(job, new Path("hdfs://localhost:9000/user/hadoop/wordcount/input"));
-        // FileOutputFormat.setOutputPath(job, new Path("hdfs://localhost:9000/user/hadoop/wordcount/output"));
+        // FileInputFormat.addInputPath(job,new Path(args[0]));
+        // FileOutputFormat.setOutputPath(job, new Path(args[1]));
+        FileInputFormat.addInputPath(job, new Path("MapReduce/src/main/resources/input/input.txt"));
+        FileOutputFormat.setOutputPath(job, new Path("MapReduce/src/main/resources/output/output2.txt"));
         System.exit(job.waitForCompletion(true) ? 0 : 1);
     }
 }
